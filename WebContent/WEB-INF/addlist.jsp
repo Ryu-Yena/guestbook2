@@ -20,7 +20,7 @@
 <body>
 
 
-	<form action="" method="post">
+	<form action="/guestbook2/gbc" method="get">
 		<table border="1">
 			<tr>
 				<td>이름</td>
