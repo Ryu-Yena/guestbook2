@@ -40,21 +40,21 @@
 		</table>
 	</form>
 
-	<%for(int i=0;i<guestList.size(); i++){ %>
+	<c:forEach items="${guestList}" var="guestList">
 		<table border="1">
 			<tr>
-				<td><%=guestList.get(i).getNo() %></td>
-				<td colspan="2"><%=guestList.get(i).getName()%></td>
-				<td colspan="6"><%=guestList.get(i).getReg_date() %></td>
+				<td>${gustList.no}</td>
+				<td colspan="2">${gustList.name}</td>
+				<td colspan="6">${gustList.reg_date}</td>
 				<td colspan="2"><a href="">삭제</a>
 			</tr>
 			
 			<tr>
-				<td colspan="11"><%=guestList.get(i).getContent()%></td>
+				<td colspan="11">${gustList.content}</td>
 			</tr>
 		</table>
 		<br>
-	<%}%>
+	</c:forEach>
 
 
 </body>
